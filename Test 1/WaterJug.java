@@ -31,8 +31,6 @@ public class WaterJug {
 
     public static void solve(int m, int n, int target) {
 
-        // A solution is impossible if target exceeds the sum of both jugs
-        // or target is not divisible by gcd(m, n).
         if (target > m + n
                 || target % gcd(m, n) != 0) {
             System.out.println("No solution exists.");

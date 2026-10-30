@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile and run Java programs",
+			"type": "shell",
+			"command": "cd \"Test 1\" && javac WaterJug.java SudokuSolver.java && java -cp . WaterJug <<'EOF'\n3\n4\n2\nEOF\nprintf '\\n---\\n'\njava -cp . SudokuSolver <<'EOF'\n530070000\n600195000\n098000060\n800060003\n400803001\n700020006\n060000280\n000419005\n000080079\nEOF",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
